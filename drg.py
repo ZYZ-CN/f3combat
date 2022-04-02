@@ -6,7 +6,7 @@ from XivCombat import define, api
 from XivCombat.multi_enemy_selector import Rectangle, NearCircle, circle, FarCircle
 
 aoe = Rectangle(10, 2)
-
+'''
 def Dot(data.me.level):
     if(data.me.level >= 50 and data.me.level < 86):
         return '樱花怒放(1)'
@@ -23,7 +23,7 @@ def NeedDot(dot):
     else:
         return 1
     
-
+'''
 
 
 
