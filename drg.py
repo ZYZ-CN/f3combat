@@ -6,6 +6,28 @@ from XivCombat import define, api
 from XivCombat.multi_enemy_selector import Rectangle, NearCircle, circle, FarCircle
 
 aoe = Rectangle(10, 2)
+
+def Dot(data.me.level):
+    if(data.me.level >= 50 and data.me.level < 86):
+        return '樱花怒放(1)'
+    if(data.me.level >= 86):
+        return '樱花缭乱'
+
+
+dot = Dot(data.me.level)
+    
+
+def NeedDot(dot):
+    if(s(dot) not in t_effect or t_effect[s(dot)].timer <= 6):
+        return 0
+    else:
+        return 1
+    
+
+
+
+
+
 class DragoonStrategy(Strategy):
     name = 'ot/drg'
     job = 'Dragoon'
