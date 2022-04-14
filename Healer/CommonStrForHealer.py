@@ -15,6 +15,9 @@ Astrologian = AST
 Sage = SAG
 Scholar = SCH
 '''
+#Level
+
+
 #HP percent
 def hp_percent(actor: 'api.Actor'):
     return actor.current_hp / actor.max_hp
